@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		DEC175AB2AB21A02006C62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */; };
 		DEC175AD2AB21A02006C62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */; };
-		DEC175AF2AB21A02006C62F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AE2AB21A02006C62F9 /* ViewController.swift */; };
+		DEC175AF2AB21A02006C62F9 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AE2AB21A02006C62F9 /* LottoViewController.swift */; };
 		DEC175B22AB21A02006C62F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC175B02AB21A02006C62F9 /* Main.storyboard */; };
 		DEC175B42AB21A04006C62F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC175B32AB21A04006C62F9 /* Assets.xcassets */; };
 		DEC175B72AB21A04006C62F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC175B52AB21A04006C62F9 /* LaunchScreen.storyboard */; };
+		DEC175C32AB21D10006C62F9 /* LottoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175C22AB21D10006C62F9 /* LottoModel.swift */; };
+		DEC175C72AB21EAA006C62F9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DEC175C62AB21EAA006C62F9 /* Alamofire */; };
+		DEC175C92AB21ECF006C62F9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175C82AB21ECF006C62F9 /* Observable.swift */; };
+		DEC175CB2AB21FCF006C62F9 /* LottoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175CA2AB21FCF006C62F9 /* LottoViewModel.swift */; };
+		DEC175CD2AB22473006C62F9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175CC2AB22473006C62F9 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DEC175A72AB21A02006C62F9 /* SeSAC_MVVM_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_MVVM_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEC175AE2AB21A02006C62F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEC175AE2AB21A02006C62F9 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		DEC175B12AB21A02006C62F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEC175B32AB21A04006C62F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEC175B62AB21A04006C62F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEC175B82AB21A04006C62F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEC175C22AB21D10006C62F9 /* LottoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoModel.swift; sourceTree = "<group>"; };
+		DEC175C82AB21ECF006C62F9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		DEC175CA2AB21FCF006C62F9 /* LottoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewModel.swift; sourceTree = "<group>"; };
+		DEC175CC2AB22473006C62F9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC175C72AB21EAA006C62F9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,59 @@
 		DEC175A92AB21A02006C62F9 /* SeSAC_MVVM_Practice */ = {
 			isa = PBXGroup;
 			children = (
-				DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */,
-				DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */,
-				DEC175AE2AB21A02006C62F9 /* ViewController.swift */,
+				DEC175C42AB21D23006C62F9 /* Network */,
+				DEC175C12AB21AB9006C62F9 /* View */,
+				DEC175BF2AB21A70006C62F9 /* Model */,
+				DEC175BE2AB21A16006C62F9 /* App */,
 				DEC175B02AB21A02006C62F9 /* Main.storyboard */,
 				DEC175B32AB21A04006C62F9 /* Assets.xcassets */,
 				DEC175B52AB21A04006C62F9 /* LaunchScreen.storyboard */,
 				DEC175B82AB21A04006C62F9 /* Info.plist */,
 			);
 			path = SeSAC_MVVM_Practice;
+			sourceTree = "<group>";
+		};
+		DEC175BE2AB21A16006C62F9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */,
+				DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DEC175BF2AB21A70006C62F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175C22AB21D10006C62F9 /* LottoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEC175C02AB21A7B006C62F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175C82AB21ECF006C62F9 /* Observable.swift */,
+				DEC175CA2AB21FCF006C62F9 /* LottoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEC175C12AB21AB9006C62F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175AE2AB21A02006C62F9 /* LottoViewController.swift */,
+				DEC175C02AB21A7B006C62F9 /* ViewModel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEC175C42AB21D23006C62F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DEC175CC2AB22473006C62F9 /* APIManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +137,9 @@
 			dependencies = (
 			);
 			name = SeSAC_MVVM_Practice;
+			packageProductDependencies = (
+				DEC175C62AB21EAA006C62F9 /* Alamofire */,
+			);
 			productName = SeSAC_MVVM_Practice;
 			productReference = DEC175A72AB21A02006C62F9 /* SeSAC_MVVM_Practice.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = DEC1759E2AB21A02006C62F9;
+			packageReferences = (
+				DEC175C52AB21EAA006C62F9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DEC175A82AB21A02006C62F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEC175AF2AB21A02006C62F9 /* ViewController.swift in Sources */,
+				DEC175AF2AB21A02006C62F9 /* LottoViewController.swift in Sources */,
+				DEC175C92AB21ECF006C62F9 /* Observable.swift in Sources */,
 				DEC175AB2AB21A02006C62F9 /* AppDelegate.swift in Sources */,
+				DEC175C32AB21D10006C62F9 /* LottoModel.swift in Sources */,
 				DEC175AD2AB21A02006C62F9 /* SceneDelegate.swift in Sources */,
+				DEC175CB2AB21FCF006C62F9 /* LottoViewModel.swift in Sources */,
+				DEC175CD2AB22473006C62F9 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEC175C52AB21EAA006C62F9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEC175C62AB21EAA006C62F9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEC175C52AB21EAA006C62F9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEC1759F2AB21A02006C62F9 /* Project object */;
 }
