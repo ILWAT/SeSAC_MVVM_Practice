@@ -21,7 +21,7 @@ class LottoViewModel{
     
     func loadData(drwNo: Int){
         print("loadData")
-        let apiManager = APIManager()
+        let apiManager = APIManager.shared
         
         apiManager.requestAlamofireLottoAPI(drwNo: drwNo) { result in
             self.title.value = result.drwNo

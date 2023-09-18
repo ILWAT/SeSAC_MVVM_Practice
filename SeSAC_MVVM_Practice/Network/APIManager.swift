@@ -9,6 +9,9 @@ import Foundation
 import Alamofire
 
 struct APIManager{
+    static let shared = APIManager()
+    
+    private init(){}
     
     func requestAlamofireLottoAPI(drwNo: Int, completionHandler: @escaping (LottoModel)->()){
         let baseURL = "https://www.dhlottery.co.kr/common.do"
@@ -27,5 +30,20 @@ struct APIManager{
             }
         }
 
+    }
+    
+    func requestUnsplashRandomAPI( completionHandler: @escaping (PhotoResult) -> ()){
+        guard let url = URL(string: "https://api.unsplash.com/photos/random") else { return }
+        
+        let header: HTTPHeaders = ["Authorization": "Client-ID \(APIKeys.unsplashKey)"]
+        AF.request(url, headers: header).validate().responseDecodable(of: PhotoResult.self) { response in
+            switch response.result {
+            case .success(let value):
+                completionHandler(value)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
 }

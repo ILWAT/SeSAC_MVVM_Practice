@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE59D71F2AB89E2A00C79348 /* PhotoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D71E2AB89E2A00C79348 /* PhotoResult.swift */; };
+		DE59D7212AB89E7000C79348 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE59D7202AB89E7000C79348 /* .gitignore */; };
+		DE59D7232AB89E8100C79348 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D7222AB89E8100C79348 /* APIKeys.swift */; };
+		DE59D7252AB8AB2B00C79348 /* RandomPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D7242AB8AB2B00C79348 /* RandomPhotoViewController.swift */; };
+		DE59D7272AB8B48300C79348 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D7262AB8B48300C79348 /* PhotoViewModel.swift */; };
 		DEC175AB2AB21A02006C62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */; };
 		DEC175AD2AB21A02006C62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */; };
 		DEC175AF2AB21A02006C62F9 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC175AE2AB21A02006C62F9 /* LottoViewController.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE59D71E2AB89E2A00C79348 /* PhotoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResult.swift; sourceTree = "<group>"; };
+		DE59D7202AB89E7000C79348 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DE59D7222AB89E8100C79348 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		DE59D7242AB8AB2B00C79348 /* RandomPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoViewController.swift; sourceTree = "<group>"; };
+		DE59D7262AB8B48300C79348 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		DEC175A72AB21A02006C62F9 /* SeSAC_MVVM_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_MVVM_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC175AA2AB21A02006C62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC175AC2AB21A02006C62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +84,7 @@
 				DEC175B32AB21A04006C62F9 /* Assets.xcassets */,
 				DEC175B52AB21A04006C62F9 /* LaunchScreen.storyboard */,
 				DEC175B82AB21A04006C62F9 /* Info.plist */,
+				DE59D7202AB89E7000C79348 /* .gitignore */,
 			);
 			path = SeSAC_MVVM_Practice;
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC175C22AB21D10006C62F9 /* LottoModel.swift */,
+				DE59D71E2AB89E2A00C79348 /* PhotoResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +112,7 @@
 			children = (
 				DEC175C82AB21ECF006C62F9 /* Observable.swift */,
 				DEC175CA2AB21FCF006C62F9 /* LottoViewModel.swift */,
+				DE59D7262AB8B48300C79348 /* PhotoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -107,6 +120,7 @@
 		DEC175C12AB21AB9006C62F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE59D7242AB8AB2B00C79348 /* RandomPhotoViewController.swift */,
 				DEC175AE2AB21A02006C62F9 /* LottoViewController.swift */,
 				DEC175C02AB21A7B006C62F9 /* ViewModel */,
 			);
@@ -117,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC175CC2AB22473006C62F9 /* APIManager.swift */,
+				DE59D7222AB89E8100C79348 /* APIKeys.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -185,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE59D7212AB89E7000C79348 /* .gitignore in Resources */,
 				DEC175B72AB21A04006C62F9 /* LaunchScreen.storyboard in Resources */,
 				DEC175B42AB21A04006C62F9 /* Assets.xcassets in Resources */,
 				DEC175B22AB21A02006C62F9 /* Main.storyboard in Resources */,
@@ -199,11 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC175AF2AB21A02006C62F9 /* LottoViewController.swift in Sources */,
+				DE59D7272AB8B48300C79348 /* PhotoViewModel.swift in Sources */,
 				DEC175C92AB21ECF006C62F9 /* Observable.swift in Sources */,
 				DEC175AB2AB21A02006C62F9 /* AppDelegate.swift in Sources */,
+				DE59D7232AB89E8100C79348 /* APIKeys.swift in Sources */,
 				DEC175C32AB21D10006C62F9 /* LottoModel.swift in Sources */,
 				DEC175AD2AB21A02006C62F9 /* SceneDelegate.swift in Sources */,
+				DE59D7252AB8AB2B00C79348 /* RandomPhotoViewController.swift in Sources */,
 				DEC175CB2AB21FCF006C62F9 /* LottoViewModel.swift in Sources */,
+				DE59D71F2AB89E2A00C79348 /* PhotoResult.swift in Sources */,
 				DEC175CD2AB22473006C62F9 /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
